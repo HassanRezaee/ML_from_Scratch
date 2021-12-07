@@ -1,0 +1,23 @@
+
+def greet_user(first_name, last_name):
+    print(f'Hi {first_name} {last_name}!')
+    print('Welcome')
+
+
+print("start")
+greet_user(last_name='Smith', first_name='John')
+
+# ** Important definition:
+# here John is the argument supplied to parameter first_name in function greet_user
+
+
+# *** positional argument: one that are read in order they're fed to the function, e.g., greet_user('John', 'Smith')
+#     keyword argument: one that we specify the parameters they're assigned to when calling the function
+#     e.g., greet_user(fist_name='John', last_name='Smith')
+#     For numerical values, always use keyword arguments since they add to the readability of the code:
+#     If you have to use both positional and keyword arguments, it should be in order: POSITIONAL then KEYWORD, e.g.,
+#     greet_user(user_id, first_name='John', last_name='Smith')
+#     Otherwise python produces error.
+
+greet_user('Marie', 'Giorgi')
+print("finish")

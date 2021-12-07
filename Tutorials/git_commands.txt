@@ -1,0 +1,54 @@
+pwd
+cd
+git --version
+git global --user.name
+git global --user.email
+git init
+ls -a (lists all files)
+git add file1.txt
+git add *.txt (all text files)
+git add *.py (all python files)
+git add . (all the files)
+git commit -m "Initial commit"
+
+git status
+
+How to skip the stage before commiting (add commit)
+directly commit, 99% don't do this.
+git commit -am "message"
+
+file removing
+rm file1.py
+
+git status (shows the changes commited or not commited)
+Red color means the changes are not staged
+
+git ls-files (shows the files that are in the staging area)
+
+
+
+### renaming or moving files
+mv file.txt main.js
+After this you have to add the file for it to be on staging area
+
+git mv main.js file1.txt
+This one does the change directly without need to git add.
+
+
+
+### create a new directory
+
+mkdir name
+
+
+## creat files or directories without them being in the staging area
+
+echo file/ > .gitingore (this adds "file/" to the gitignore file)
+file/ the forward slash indicates a directory
+
+after gitignore if we get a git status it only shows the gitignore
+and not the contents of it (file/ in this case)
+
+
+
+git ls-files (shows the files in staging area)

@@ -1,0 +1,23 @@
+course = 'Python for beginners'
+print(len(course))
+print(course.upper())
+
+course1 = course.upper()
+print(course1)
+
+
+print(course.lower())
+
+
+print(course1.find('y'))
+
+print(course1.find('FOR'))
+
+
+print(course.replace(' b', ' absolute b'))
+
+if ('PP' in course):
+    print('found')
+else:
+    print('Not found')
+

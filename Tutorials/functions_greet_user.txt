@@ -1,0 +1,15 @@
+
+
+def greet_user(first_name, last_name):
+    print(f'Hi {first_name} {last_name}!')
+    print('Welcome')
+
+
+print("start")
+greet_user('John', 'Smith')
+
+# ** Important definition:
+# here John is the argument supplied to parameter first_name in function greet_user
+
+greet_user('Marie', 'Giorgi')
+print("finish")

@@ -1,0 +1,58 @@
+first = 'John'
+last = 'Smith'
+msg = f'{first} [{last}] is a coder'
+
+msg1 = f' [{first} {last}] is not a coder at all'
+print(msg1)
+
+
+General purpose functions such as print()
+Meta functions: those that are built for one particular type:
+course = 'Python'
+
+print(course.upper())
+
+here upper() is a meta function
+
+Note this does not change the original input, i.e., course here.
+if you want to change the input:
+course1 = course.upper()
+
+course.find(str) will find the index where the str occurs.
+course.find('Y') will return -1 because it is case sensitive
+
+
+course.replace('Python', 'R code')
+
+'some char' in 'some str'
+gives a bool if the char is within str
+
+
+
+Arithmetic operators:
+// is quotient int after division
+% is modulous which is the reminder after division
+** is power
+
+
+Augmented assignment operator: do the same operation in shorter form
+x = x+1
+x += 1
+x -= 1
+x /= 2 (divides itself by 2)
+
+
+Operator precedence
+for example * precedes +
+the order is: exponentiation 2**3 --> multiplication or division --> addition/subtraction
+** --> /* --> +-
+paranthesis always takes precendence
+
+
+
+
+Module
+A set of reusable functions, such as the math module
+
+
+

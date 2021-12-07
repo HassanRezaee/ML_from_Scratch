@@ -1,0 +1,49 @@
+
+
+
+numbers = [1,2,3,4]
+numbers.append(3) # appends 3 at the end of the list
+#print(numbers)
+
+numbers.insert(0,10) # inserts 10 in index 0
+#print(numbers)
+
+numbers.remove(1) # removes 1
+#print(numbers)
+
+numbers.pop() # removes the last item
+#print(numbers)
+
+#print(numbers.index(10)) # finds the index of an item
+
+#print(3 in numbers) #boolean
+
+#print(numbers.count(3)) # counts the number of 3s in numbers
+
+numbers.sort() # note sort does not give a value, it does on the input directly
+#print(numbers)
+
+numbers.reverse()
+#print(numbers)
+
+numbers2 = numbers.copy()
+numbers.append(24)
+#print(numbers)
+#print(numbers2)
+
+numbers.clear()
+#print(numbers)
+
+
+
+### program to remove duplicates in a list
+numbers = [1, 2, 3, 2, 1, 2, 4, 4, 5, 3, 2, 1, 2]
+numbers_unique = []
+
+for number in numbers:
+    if number not in numbers_unique:
+        numbers_unique.append(number)
+        numbers_unique.append(numbers.count(number))
+
+
+print(numbers_unique)

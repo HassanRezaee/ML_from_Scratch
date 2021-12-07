@@ -1,0 +1,36 @@
+from pathlib import Path
+
+
+"""
+Absolute path: from the very root where the file is located
+Example: c:\Program Files\Microsoft
+
+Relative path: a path starting from the current directory
+"""
+
+path = Path("ecommerce") # create a path object of the ecommerce directory that we have previously created
+print(path.exists())
+
+# we can create a new directory in the path using:
+path1 = Path("Emails")
+path1.rmdir()
+path1.mkdir()
+
+
+# or we can delete the directory
+path2 = Path("To_be_removed")
+path2.mkdir()
+path2.rmdir()
+
+# Find all the directories and files in a given path
+# first we change the path to the current directory using
+path = Path()
+print(path.glob('*.*')) # gets all the files, and files only
+print(path.glob('*.xlsx')) # finds all the Excel files
+
+
+# this lists all the Python files in the "path" directory that we have created, because path.glob() creates a "generator object"
+for file in path.glob('*.py'):
+    print(file)
+
+

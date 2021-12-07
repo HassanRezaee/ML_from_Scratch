@@ -1,0 +1,6 @@
+numbers = (1,2,3)
+print(numbers[0])
+
+numbers[1] = 10 # we cannot change anything about tuples
+
+# tuples are best when you don't want to accidentally change a list

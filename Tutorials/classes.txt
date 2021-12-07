@@ -1,0 +1,47 @@
+# Pascal naming convention:
+# Classes should always start with capital letters (if more than one word, capitalize the first letter of each word class)
+# Variables: lower case (if more than one word, separated with _)
+# Functions: lower case (if more than one word, separated with _)
+
+# We use class to define new types
+# These types can contain new methods
+# An object is an instance of a class
+# The methods can contain different attributes on their own
+
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point1 = Point() # point1 is an object (instance) of class Point
+point1.move()
+
+# objects can have attributes on themselves
+point2 = Point()
+point2.x = 10
+point2.y = 20
+print(point2.x)
+
+
+
+
+# Constructor: is a function that gets called when creating an object from a class
+# This is to avoid to re-define attributes for every time we create an object
+
+class Point1:
+    def __init__(self, x, y): # this "self" here is a reference to the current object
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point3 = Point1(x=1000, y=2000)
+point3.x = 1500
+print(point3.x)
