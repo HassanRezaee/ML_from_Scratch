@@ -1,1 +1,2 @@
-# ML_from_Scratch
+# ML from scratch
+A repository of some of the well-known machine learning algorithms in Python
