@@ -1,7 +1,0 @@
-weight = float(input('Enter the weight: '))
-unit = input('Is it in Lbs (L) or kilograms (Kg)? ')
-
-if (unit.upper()=='KG' or unit.upper() =='K'):
-    print(f'Your weight in pounds is {weight*2} Lbs')
-else:
-    print(f'Your weight in kilograms is {weight * 0.5} kg')

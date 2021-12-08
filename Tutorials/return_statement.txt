@@ -1,7 +1,0 @@
-def square(number):
-    number *= number
-    return number  # if there is not return statement, Python functions always return None.
-
-
-result = square(3)
-print(result)
